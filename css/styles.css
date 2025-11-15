@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;  
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+    height: 100vh;
+    background: #355C7D;
+    background: -webkit-linear-gradient(to bottom, #C06C84, #6C5B7B, #355C7D);  
+    background: linear-gradient(to bottom, #C06C84, #6C5B7B, #355C7D); 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+:root {
+    --red: #C06C84; 
+    --purple: #6C5B7B;
+    --blue: #355C7D;
+    --white: #FFFFFF;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 40rem;
+}
+
+h1 {
+    font-size: 6rem;
+    text-align: center;
+    color: var(--white);
+    margin: 0;
+}
+
+h2 {
+    font-size: 5rem;
+    text-align: center;
+    color: var(--white);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.conversion-calc-input {
+    font-size: 2rem;
+    height: 5.5rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: .7rem;
+    color: var(--purple);
+    border: 1px solid var(--blue);
+    transition: all 0.3s ease;
+}
+.conversion-calc-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(21, 156, 228, 0.4);
+}
+
+.btn {
+    margin: 0 auto 1rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    color: var(--white);
+    background-color: var(--red);
+    border: none;
+    border-radius: .7rem;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--blue);
+}
